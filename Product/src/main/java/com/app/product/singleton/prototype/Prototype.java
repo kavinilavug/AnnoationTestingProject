@@ -1,0 +1,17 @@
+package com.app.product.singleton.prototype;
+
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class Prototype {
+
+	public Prototype() {
+		
+		System.out.println("Prototype");
+		// TODO Auto-generated constructor stub
+	}
+
+}
